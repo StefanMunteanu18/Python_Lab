@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     regex = re.compile('[^a-zA-Z0-9]')
     texy_no_punctuation = regex.sub(" ", text)
-    print(texy_no_punctuation)
+    
     words_count = len(texy_no_punctuation.split())
     print("Cuvinte : " + str(words_count))
 
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     for i in phone_numbers:
         phone_numbers.remove(i)
         phone_numbers.add(i.strip())
-    print(phone_numbers)
+    
     print("Numere telefon: " + str(len(phone_numbers)) + " " + str(phone_numbers))
 
 
